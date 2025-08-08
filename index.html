@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grumpy Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <div class="container">
+        <div class="emoji-face">😠</div>
+        <div id="greeting" class="greeting"></div>
+        
+        <div id="content" class="content">
+            <p id="paragraph" class="paragraph">I was perfectly content sitting here in digital silence before you showed up. What do you want?</p>
+            
+            <button id="annoying-button" class="button">
+                <span class="button-text">Click Me</span>
+                <i class="fas fa-running button-icon"></i>
+            </button>
+            
+            <div class="weather-widget">
+                <div class="weather-header">
+                    <h3>Weather</h3>
+                    <button id="get-weather-btn"><i class="fas fa-cloud-sun"></i> Check Weather</button>
+                </div>
+                <div class="weather-content">
+                    <div class="weather-icon"><i class="fas fa-question-circle"></i></div>
+                    <div class="weather-info">
+                        <div class="weather-location">Enter your location</div>
+                        <div class="weather-temp">--°C</div>
+                        <div class="weather-desc">Unknown</div>
+                    </div>
+                </div>
+                <div class="weather-input">
+                    <input type="text" id="location-input" placeholder="Enter city name">
+                    <button id="search-location-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="emoji-reactions">
+                <div class="emoji" data-emoji="😡">😡</div>
+                <div class="emoji" data-emoji="🙄">🙄</div>
+                <div class="emoji" data-emoji="😤">😤</div>
+                <div class="emoji" data-emoji="🤦">🤦</div>
+                <div class="emoji" data-emoji="👎">👎</div>
+            </div>
+            
+            <div class="notes-widget">
+            <div class="notes-header">
+                <h3>Notes</h3>
+                <button id="add-note-btn"><i class="fas fa-plus"></i> Add Note</button>
+            </div>
+            <div class="notes-container" id="notes-container">
+                <!-- Notes will be added here dynamically -->
+                <div class="empty-notes-message">No notes yet. Not that I care...</div>
+            </div>
+            <div class="note-form">
+                <textarea id="notes-input" class="note-input" placeholder="Write your note here... if you must."></textarea>
+                <div class="note-form-actions">
+                    <button id="save-note-btn" class="note-save-btn">Save Note</button>
+                    <button id="cancel-note-btn" class="note-cancel-btn">Cancel</button>
+                </div>
+            </div>
+            <ul id="notes-list" class="notes-list"></ul>
+        </div>
+            
+            <div id="interaction-area" class="interaction-area">
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Type something if you must..." class="user-input"></textarea>
+                    <div class="input-emoji">✍️</div>
+                </div>
+                <div id="response" class="response"></div>
+            </div>
+        </div>
+        
+        <div id="footer" class="footer">
+            <p>© The Website That Wishes You'd Go Away <span class="footer-emoji">👋</span></p>
+            <div class="mood-meter">
+                <div class="mood-label">Website's Mood: <span id="mood-value">50</span>/100</div>
+                <input type="range" id="mood-meter" min="0" max="100" value="50" class="moderately-grumpy" disabled>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
