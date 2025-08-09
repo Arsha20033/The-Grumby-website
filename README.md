@@ -94,8 +94,8 @@ For Software:This project is a front-end only application, so no complex server 
 
 
 ## Team Contributions
-- [Kalyani Dhananjayan]: [Specific contributions]
-- [Arsha Fathima]: [Specific contributions]
+- [Kalyani Dhananjayan]: [Designe]
+- [Arsha Fathima]: [Designer]
 
 
 ---
